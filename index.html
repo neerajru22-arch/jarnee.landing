@@ -7,29 +7,27 @@
   <meta name="description" content="Jarnee is the modern Restaurant OS: POS billing, CRM, inventory, recipes, purchases, KOT, table & delivery, multi‑outlet, analytics and more—built for restaurants and hotels.">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#0b5d34" />
   <!-- Open Graph -->
   <meta property="og:title" content="Jarnee – POS, CRM & ERP for Restaurants">
   <meta property="og:description" content="End‑to‑end software to organize and scale your restaurant business.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jarnee.online/">
-  <meta property="og:image" content="https://dummyimage.com/1200x630/0f172a/ffffff&text=Jarnee">
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0b5d34/ffffff&text=Jarnee">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Jarnee – POS, CRM & ERP for Restaurants">
   <meta name="twitter:description" content="Restaurant OS: POS, CRM, ERP, multi‑outlet, inventory, analytics.">
-  <meta name="twitter:image" content="https://dummyimage.com/1200x630/0f172a/ffffff&text=Jarnee">
+  <meta name="twitter:image" content="https://dummyimage.com/1200x630/0b5d34/ffffff&text=Jarnee">
   <style>
-    /* Smooth shadow tokens */
-    .card{ box-shadow: 0 10px 20px -10px rgba(0,0,0,.2), 0 6px 10px -8px rgba(0,0,0,.15);} 
-    .glass{ backdrop-filter: saturate(180%) blur(10px); background: rgba(15,23,42,.7);} 
-    .sticky-blur{ backdrop-filter: blur(8px); background: rgba(2,6,23,.6);} 
+    .card{ box-shadow: 0 10px 20px -10px rgba(0,0,0,.4), 0 6px 10px -8px rgba(0,0,0,.3);} 
+    .glass{ backdrop-filter: saturate(160%) blur(10px); background: rgba(2,6,23,.55);} 
+    .sticky-blur{ backdrop-filter: blur(8px); background: rgba(2,6,23,.7);} 
   </style>
-  <!-- Netlify forms support (optional, safe to keep even on GitHub Pages) -->
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
-  <!-- Floating WhatsApp CTA -->
-  <a href="https://wa.me/917093767557" class="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2 rounded-full px-4 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold shadow-lg" aria-label="Chat on WhatsApp">
+  <!-- Floating WhatsApp CTA (uses api.whatsapp.com for max compatibility) -->
+  <a href="https://api.whatsapp.com/send?phone=917093767557&text=Hi%20Jarnee%20team%2C%20I%27d%20like%20a%20demo." target="_blank" rel="noopener" class="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2 rounded-full px-4 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold shadow-lg" aria-label="Chat on WhatsApp">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.92 11.92 0 0 0 12.06 0C5.52 0 .24 5.28.24 11.82a11.6 11.6 0 0 0 1.56 5.88L0 24l6.48-1.68a12.52 12.52 0 0 0 5.58 1.44h.06c6.54 0 11.82-5.28 11.82-11.82a11.6 11.6 0 0 0-3.42-8.46Zm-8.46 18c-1.74 0-3.48-.48-4.98-1.38l-.36-.24-3.84 1.02 1.02-3.72-.24-.36a9.5 9.5 0 0 1-1.5-5.16c0-5.28 4.32-9.6 9.6-9.6a9.55 9.55 0 0 1 6.78 2.82 9.55 9.55 0 0 1 2.82 6.78c0 5.28-4.32 9.6-9.6 9.6Zm5.58-7.86c-.3-.18-1.74-.84-2.04-.96-.3-.12-.54-.18-.78.18-.24.36-.9.96-1.08 1.2-.18.24-.42.27-.78.09-.36-.18-1.5-.54-2.88-1.74-1.06-.96-1.8-2.16-2.04-2.52-.24-.36-.03-.54.15-.72.15-.15.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.78-1.86-1.08-2.55-.27-.66-.54-.57-.78-.57h-.66c-.21 0-.57.09-.87.42-.3.33-1.14 1.11-1.14 2.7s1.17 3.12 1.32 3.33c.15.21 2.31 3.54 5.61 4.97.78.33 1.38.54 1.86.69.78.24 1.5.21 2.07.12.63-.09 1.95-.78 2.22-1.56.27-.78.27-1.44.18-1.56-.09-.12-.27-.18-.57-.36Z"/></svg>
     WhatsApp us
   </a>
@@ -50,28 +48,15 @@
           <a href="#contact" class="hover:text-white">Contact</a>
         </nav>
         <div class="flex items-center gap-3">
-          <a href="mailto:sales@jarnee.online" class="hidden sm:inline-flex items-center rounded-xl bg-white text-slate-900 px-4 py-2 font-semibold hover:bg-slate-200">Book a Demo</a>
-          <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border border-white/10" aria-label="Toggle Menu">
-            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
-          </button>
+          <a href="mailto:connect@jarnee.online" class="hidden sm:inline-flex items-center rounded-xl bg-emerald-500 text-slate-900 px-4 py-2 font-semibold hover:bg-emerald-400">Book a Demo</a>
         </div>
-      </div>
-    </div>
-    <!-- mobile menu -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-white/5">
-      <div class="px-4 py-3 flex flex-col gap-3 text-slate-300">
-        <a href="#features" class="hover:text-white">Features</a>
-        <a href="#solutions" class="hover:text-white">Solutions</a>
-        <a href="#pricing" class="hover:text-white">Pricing</a>
-        <a href="#faq" class="hover:text-white">FAQ</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="relative pt-28 pb-16 overflow-hidden">
-    <div class="absolute -top-48 -left-48 h-96 w-96 rounded-full bg-emerald-500/20 blur-3xl"></div>
+    <div class="absolute -top-48 -left-48 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-10 items-center">
         <div>
@@ -79,17 +64,12 @@
           <p class="mt-4 text-slate-300 text-lg">Run billing, KOT, inventory, recipes, procurement, CRM, loyalty, delivery, table service and multi‑outlet operations—online or offline. Built for restaurants, QSRs and hotels.</p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="#pricing" class="inline-flex items-center rounded-xl bg-emerald-500 text-slate-900 px-5 py-3 font-semibold hover:bg-emerald-400">See Pricing</a>
-            <a href="mailto:sales@jarnee.online" class="inline-flex items-center rounded-xl border border-white/10 px-5 py-3 font-semibold hover:bg-white/5">Book a Demo</a>
-          </div>
-          <div class="mt-6 flex flex-wrap gap-4 text-xs text-slate-400">
-            <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> Offline‑capable</span>
-            <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> Multi‑outlet</span>
-            <span class="inline-flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> GST‑friendly</span>
+            <a href="mailto:connect@jarnee.online" class="inline-flex items-center rounded-xl border border-white/10 px-5 py-3 font-semibold hover:bg-white/5">Book a Demo</a>
           </div>
         </div>
         <div class="relative">
-          <div class="card rounded-2xl border border-white/10 p-4 bg-slate-900/40">
-            <div class="rounded-xl border border-white/10 bg-black aspect-video flex items-center justify-center text-slate-400">Dashboard Preview</div>
+          <div class="card rounded-2xl border border-white/10 p-4 bg-slate-900/60">
+            <div class="rounded-xl border border-white/10 bg-black/60 aspect-video flex items-center justify-center text-slate-400">Dashboard Preview</div>
             <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
               <div class="rounded-xl border border-white/10 p-3">
                 <div class="text-slate-400">Today</div>
@@ -118,134 +98,10 @@
     </div>
   </section>
 
-  <!-- Features -->
-  <section id="features" class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold">Everything you need to run a restaurant</h2>
-      <p class="text-slate-300 mt-2">Modular platform—start with POS, add CRM & ERP when you grow.</p>
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- POS -->
-        <article class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-lg font-semibold">Fast POS Billing</div>
-          <p class="text-slate-300 mt-2">Touch‑friendly billing, KOT, table & counter service, kitchen displays, GST invoices, discounts, and split bills.</p>
-        </article>
-        <!-- CRM -->
-        <article class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-lg font-semibold">CRM & Loyalty</div>
-          <p class="text-slate-300 mt-2">Customer profiles, visit history, points & rewards, SMS/WhatsApp campaigns, feedback & NPS.</p>
-        </article>
-        <!-- ERP -->
-        <article class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-lg font-semibold">Inventory & Recipes</div>
-          <p class="text-slate-300 mt-2">Recipe‑level costing, stock in/out, wastage, purchases & GRN, vendor management, multi‑store transfers.</p>
-        </article>
-        <!-- Delivery -->
-        <article class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-lg font-semibold">Delivery & Aggregators</div>
-          <p class="text-slate-300 mt-2">Accept Swiggy/Zomato orders, own‑channel web ordering, rider assignment, and order tracking.</p>
-        </article>
-        <!-- Reports -->
-        <article class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-lg font-semibold">Realtime Reports</div>
-          <p class="text-slate-300 mt-2">Sales, taxes, item mix, outlet wise P&amp;L, inventory ageing, audit trails, and exports.</p>
-        </article>
-        <!-- Access -->
-        <article class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-lg font-semibold">Multi‑Outlet Control</div>
-          <p class="text-slate-300 mt-2">Central menus, pricing, roles & permissions, approvals—run 1 to 100+ outlets with ease.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solutions -->
-  <section id="solutions" class="py-16 bg-slate-900/40 border-y border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold">Built for every format</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="card rounded-2xl border border-white/10 p-6">
-          <div class="font-semibold">QSR & Cafés</div>
-          <p class="text-slate-300 mt-2">Superfast billing, combos, add‑ons, kitchen screens, and delivery integrations.</p>
-        </div>
-        <div class="card rounded-2xl border border-white/10 p-6">
-          <div class="font-semibold">Dine‑In & Fine Dining</div>
-          <p class="text-slate-300 mt-2">Table layouts, captain ordering, course/KOT routing, void/comp control, and reservations.</p>
-        </div>
-        <div class="card rounded-2xl border border-white/10 p-6">
-          <div class="font-semibold">Cloud Kitchens & Chains</div>
-          <p class="text-slate-300 mt-2">Central kitchen, inter‑store transfers, purchase planning, SKU‑level costing and approvals.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold">Simple pricing to start and scale</h2>
-      <p class="text-slate-300 mt-2">Transparent monthly plans. No setup fee. Cancel anytime.</p>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-sm text-emerald-400 font-semibold">Starter</div>
-          <div class="mt-2 text-3xl font-extrabold">₹999<span class="text-base font-semibold text-slate-300">/outlet/mo</span></div>
-          <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
-            <li>POS billing + KOT</li>
-            <li>Basic reports</li>
-            <li>Email support</li>
-          </ul>
-          <a href="mailto:sales@jarnee.online?subject=Jarnee%20Starter%20Plan" class="mt-5 inline-flex items-center rounded-xl bg-emerald-500 text-slate-900 px-4 py-2 font-semibold hover:bg-emerald-400">Choose Starter</a>
-        </div>
-        <div class="card rounded-2xl border border-emerald-500/40 p-6 bg-emerald-500/5 ring-2 ring-emerald-500/30">
-          <div class="text-sm text-emerald-400 font-semibold">Growth (Most Popular)</div>
-          <div class="mt-2 text-3xl font-extrabold">₹2,499<span class="text-base font-semibold text-slate-300">/outlet/mo</span></div>
-          <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
-            <li>Everything in Starter</li>
-            <li>CRM & Loyalty</li>
-            <li>Inventory & Recipes</li>
-            <li>Delivery integrations</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="mailto:sales@jarnee.online?subject=Jarnee%20Growth%20Plan" class="mt-5 inline-flex items-center rounded-xl bg-emerald-500 text-slate-900 px-4 py-2 font-semibold hover:bg-emerald-400">Choose Growth</a>
-        </div>
-        <div class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <div class="text-sm text-emerald-400 font-semibold">Enterprise</div>
-          <div class="mt-2 text-3xl font-extrabold">Custom</div>
-          <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
-            <li>Multi‑city & multi‑brand</li>
-            <li>Advanced analytics</li>
-            <li>Custom SLAs & onboarding</li>
-          </ul>
-          <a href="mailto:sales@jarnee.online?subject=Jarnee%20Enterprise" class="mt-5 inline-flex items-center rounded-xl border border-white/10 px-4 py-2 font-semibold hover:bg-white/5">Talk to Sales</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="py-16 bg-slate-900/40 border-y border-white/5">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold">Frequently asked questions</h2>
-      <div class="mt-8 grid gap-6">
-        <details class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <summary class="font-semibold cursor-pointer">Does Jarnee work offline?</summary>
-          <p class="text-slate-300 mt-2">Yes. Billing continues offline; data syncs automatically when the internet is back.</p>
-        </details>
-        <details class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <summary class="font-semibold cursor-pointer">Can I manage multiple outlets?</summary>
-          <p class="text-slate-300 mt-2">Absolutely. Centralized menus, roles and reports let you control many outlets from one dashboard.</p>
-        </details>
-        <details class="card rounded-2xl border border-white/10 p-6 bg-slate-900/40">
-          <summary class="font-semibold cursor-pointer">Is GST supported?</summary>
-          <p class="text-slate-300 mt-2">Yes, GST‑friendly invoices and reports are included out of the box.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact / Lead form -->
   <section id="contact" class="py-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="card rounded-2xl border border-white/10 p-8 bg-slate-900/40">
+      <div class="card rounded-2xl border border-white/10 p-8 bg-slate-900/60">
         <h2 class="text-3xl font-bold">Get a demo</h2>
         <p class="text-slate-300 mt-2">Tell us a bit about your business. We’ll reach out on WhatsApp at <span class="font-semibold">+91 70937 67557</span>.</p>
         <form name="lead" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-6 grid gap-4">
@@ -263,7 +119,7 @@
           <button class="mt-2 inline-flex items-center rounded-xl bg-emerald-500 text-slate-900 px-5 py-3 font-semibold hover:bg-emerald-400 w-fit" type="submit">Request Demo</button>
         </form>
       </div>
-      <p class="text-center text-sm text-slate-400 mt-6">Or email <a class="underline hover:text-slate-200" href="mailto:sales@jarnee.online">sales@jarnee.online</a></p>
+      <p class="text-center text-sm text-slate-400 mt-6">Or email <a class="underline hover:text-slate-200" href="mailto:connect@jarnee.online">connect@jarnee.online</a></p>
     </div>
   </section>
 
@@ -286,8 +142,8 @@
         <div>
           <div class="font-semibold">Contact</div>
           <ul class="mt-2 space-y-1">
-            <li><a class="hover:text-white" href="mailto:sales@jarnee.online">sales@jarnee.online</a></li>
-            <li><a class="hover:text-white" href="https://wa.me/917093767557">+91 70937 67557 (WhatsApp)</a></li>
+            <li><a class="hover:text-white" href="mailto:connect@jarnee.online">connect@jarnee.online</a></li>
+            <li><a class="hover:text-white" href="https://api.whatsapp.com/send?phone=917093767557&text=Hi%20Jarnee%20team%2C%20I%27d%20like%20a%20demo." target="_blank" rel="noopener">+91 70937 67557 (WhatsApp)</a></li>
           </ul>
         </div>
       </div>
@@ -295,40 +151,7 @@
     </div>
   </footer>
 
-  <!-- Schema: Organization & SoftwareApplication -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Jarnee",
-    "url": "https://jarnee.online/",
-    "logo": "https://jarnee.online/logo.png",
-    "sameAs": []
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Jarnee Restaurant OS",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web, Android, iOS, Windows",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "INR",
-      "price": "999"
-    }
-  }
-  </script>
-
-  <!-- Scripts -->
   <script>
-    // mobile nav toggle
-    document.getElementById('menuBtn').addEventListener('click', ()=>{
-      const m = document.getElementById('mobileMenu');
-      m.classList.toggle('hidden');
-    });
-    // year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
